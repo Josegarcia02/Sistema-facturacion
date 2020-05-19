@@ -13,6 +13,13 @@ class Usuarios {
             } else {
                 if(validarEmail(email)){
                     if(6 <= password.length){
+                        $.post(
+                            "Index/userLogin",
+                            {email, password},
+                            (response)=>{
+                                console.log(response);
+                            }
+                        );
 
                     }else{
                         document.getElementById("password").focus();
