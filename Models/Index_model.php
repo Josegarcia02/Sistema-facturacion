@@ -1,7 +1,8 @@
 <?php
-class Index_model{
+class Index_model extends Conexion {
 
     function __construct(){
+        parent::__construct();
     
     }
     
